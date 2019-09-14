@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
     <style>
+        img {
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+        }
+        
         .header {
             padding: 2%;
             /* some padding */
@@ -24,42 +30,54 @@
         }
         /* Style the top navigation bar */
         
-        .navbar {
-            overflow: hidden;
-            /* Hide overflow */
-            background-color: #333;
-            /* Dark background color */
+        .sidenav {
+            height: 100%;
+            /* Full-height: remove this if you want "auto" height */
+            width: 160px;
+            /* Set the width of the sidebar */
+            position: fixed;
+            /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 20px;
         }
-        /* Style the navigation bar links */
+        /* The navigation menu links */
         
-        .navbar a {
-            float: left;
-            /* Make sure that the links stay side-by-side */
-            display: block;
-            /* Change the display to block, for responsive reasons (see below) */
-            color: white;
-            /* White text color */
-            text-align: center;
-            /* Center the text */
-            padding: 14px 20px;
-            /* Add some padding */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
             text-decoration: none;
-            /* Remove underline */
+            font-size: 25px;
+            color: #818181;
+            display: block;
         }
-        /* Right-aligned link */
+        /* When you mouse over the navigation links, change their color */
         
-        .navbar a.right {
-            float: right;
-            /* Float a link to the right */
+        .sidenav a:hover {
+            color: #f1f1f1;
         }
-        /* Right-aligned link */
-        /* Change color on hover/mouse-over */
+        /* Style page content */
         
-        .navbar a:hover {
-            background-color: #ddd;
-            /* Grey background color */
-            color: black;
-            /* Black text color */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidebar */
+            padding: 0px 10px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
         }
     </style>
 
@@ -70,14 +88,16 @@
     </script>
 
     <div class="header">
+        <img src="./images/avatar.jpg" alt="Avatar" width="100" height="100" align="left">
+
         <h1>Cameron Cook</h1>
         <p>A homepage and portfolio.</p>
     </div>
 
 
-    <div class="navbar">
+    <div class="sidenav">
         <a href="#" class="right">Contact</a>
-        <a href="https://github.com/CameronRCook" class="right">GitHub</a>
+        <a href="https://github.com/CameronRCook">GitHub</a>
         <a href="#">Projects</a>
         <a href="./blog.html">Blogs</a>
         <a href="#">Resume</a>
