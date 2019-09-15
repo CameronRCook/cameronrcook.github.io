@@ -16,6 +16,10 @@
             border-radius: 50%;
             max-width: 100%;
             height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 6px 8px 6px 16px;
         }
         
         .header {
@@ -33,7 +37,7 @@
         .sidenav {
             height: 100%;
             /* Full-height: remove this if you want "auto" height */
-            width: 160px;
+            width: 250px;
             /* Set the width of the sidebar */
             position: fixed;
             /* Fixed Sidebar (stay in place on scroll) */
@@ -53,6 +57,7 @@
         .sidenav a {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
+            text-align: center;
             font-size: 25px;
             color: #818181;
             display: block;
@@ -63,6 +68,24 @@
             color: #f1f1f1;
         }
         /* Style page content */
+        
+        .sidenav name {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 30px;
+            color: #bbbbbb;
+            display: block;
+        }
+        
+        .sidenav about {
+            padding: 6px 8px 32px 16px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            color: #bbbbbb;
+            display: block;
+        }
         
         .main {
             margin-left: 160px;
@@ -88,19 +111,20 @@
     </script>
 
     <div class="header">
-        <img src="./images/avatar.jpg" alt="Avatar" width="100" height="100" align="left">
-
-        <h1>Cameron Cook</h1>
-        <p>A homepage and portfolio.</p>
+        <h1>About Me</h1>
+        <p>I am a Computer Science undegraduate at the University of Texas at Dallas.</p>
     </div>
 
 
     <div class="sidenav">
-        <a href="#" class="right">Contact</a>
+        <img src="./images/avatar.jpg" alt="Avatar" width="100" height="100">
+        <name>Cameron Cook</name>
+        <about>UTD Software Engineering </about>
+        <a href="./projects.html">Projects</a>
+        <a href="./blog.html">Blogs (Soon)</a>
         <a href="https://github.com/CameronRCook">GitHub</a>
-        <a href="#">Projects</a>
-        <a href="./blog.html">Blogs</a>
-        <a href="#">Resume</a>
+        <a href="https://www.linkedin.com/in/cameron-c-86b889119/">LinkedIn</a>
+        <a href="#" class="right">Contact (Soon)</a>
     </div>
 
 
