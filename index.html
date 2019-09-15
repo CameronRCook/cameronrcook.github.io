@@ -23,7 +23,7 @@
         }
         
         .green {
-            background: #71816d;
+            background: #79b791;
         }
         
         .blackoutline {
@@ -42,7 +42,7 @@
         /* Style for Header, will have to update for other imgs */
         
         .header {
-            padding: 2%;
+            padding: 1%;
             text-align: left;
             font-size: 20px;
             color: white;
@@ -130,7 +130,7 @@
             border: 1px solid #ccc;
             background-color: #e6e8e6;
             width: 30%;
-            height: 425px;
+            height: 100%;
         }
         /* Style the buttons that are used to open the tab content */
         
@@ -164,7 +164,7 @@
             border: 1px solid #ccc;
             width: 70%;
             border-left: none;
-            height: 425px;
+            height: auto;
         }
         /* Style the buttons that are used to open and close the accordion panel */
         
@@ -239,7 +239,7 @@
     </div>
 
     <div class="main">
-        <div class="header teal shadow " style="margin-bottom:2%">
+        <div class="header teal shadow " style="margin-bottom:1%">
             <h1>About Me</h1>
             <p>I am a Computer Science undegraduate at the University of Texas at Dallas.</p>
         </div>
@@ -251,6 +251,7 @@
 
             <div class="tab">
                 <button class="tablinks" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
+                <button class="tablinks" onclick="openExperience(event, 'PDT')">Treasurer</button>
                 <button class="tablinks" onclick="openExperience(event, 'OL')">Orientation Leader</button>
                 <button class="tablinks" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
             </div>
@@ -260,6 +261,13 @@
                 <p><i>July 2019 - Present</i></p>
                 <p>The OIT Help Desk’s primary focus is to provide quality technical support to the UTD population for UTD systems and services, approved technologies, and connectivity on UTD networks. This support is provided over the phone and email, using
                     remote access tools including chat, and in-person at the ROC walk-up support location.</p>
+            </div>
+
+            <div id="PDT" class="tabcontent">
+                <h3>Phi Delta Theta Fraternity: Executive Officer</h3>
+                <p><i>April 2019 - Present</i></p>
+                <p>The Treasurer is mostly responsiple for setting financial expectations, guidelines, and making sure money is spent effeciently. The Treasurer spends time Working with representatives from each committee to decide how the chapter's budget
+                    (~ $30,000) should be split amongst all the parties requesting money.</p>
             </div>
 
             <div id="OL" class="tabcontent">
@@ -277,10 +285,10 @@
             </div>
         </div>
 
-        <div id="clear" style="clear:both; margin-bottom:2%"></div>
+        <div id="clear" style="clear:both; margin-bottom:1%"></div>
 
         <div class="shadow">
-            <div class="subheader salmon">
+            <div class="subheader green">
                 <h1>Education</h1>
             </div>
             <button class="accordion ">The University of Texas at Dallas: Undegraduate of Computer Science</button>
