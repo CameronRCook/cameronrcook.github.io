@@ -37,7 +37,14 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding: 6px 8px 6px 16px;
+            margin-bottom: 20px;
+        }
+        
+        .avatar {
+            border: 5px solid #89cdd6;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
         }
         /* Style for Header, will have to update for other imgs */
         
@@ -129,7 +136,7 @@
             float: left;
             background-color: #e6e8e6;
             width: auto;
-            height: 100%;
+            height: auto;
         }
         /* Style the buttons that are used to open the tab content */
         
@@ -225,7 +232,7 @@
 
 <body>
     <div class="sidenav shadow">
-        <img src="./images/avatar.jpg" alt="Avatar" width="200" height="200">
+        <img src="./images/avatar.jpg" class="avatar shadow" alt="Avatar" width="200" height="200">
         <name>Cameron Cook</name>
         <about>UTD Computer Science </about>
         <a class="active" href="./index.html">Home</a>
