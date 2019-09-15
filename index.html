@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
     <style>
+        /* Background Color Scheme */
+        
+        .teal {
+            background: #89cdd6;
+        }
+        
+        .salmon {
+            background: #f1bf98;
+        }
+        
         img {
             border-radius: 50%;
             max-width: 100%;
@@ -21,14 +31,20 @@
             margin-right: auto;
             padding: 6px 8px 6px 16px;
         }
-        /* Style for img, will have to update for other imgs */
+        /* Style for Header, will have to update for other imgs */
         
         .header {
             padding: 2%;
-            text-align: center;
-            background: #89cdd6;
+            text-align: left;
+            font-size: 20px;
             color: white;
-            box-shadow: 5px 5px 10px grey;
+        }
+        
+        .subheader {
+            padding: 1%;
+            text-align: left;
+            font-size: 20px;
+            color: white;
         }
         /* Style the top navigation bar */
         
@@ -39,10 +55,9 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: rgb(148, 148, 148);
+            background-color: #e6e8e6;
             overflow-x: hidden;
             padding-top: 20px;
-            box-shadow: 5px 0px 10px grey;
         }
         /* The navigation menu links */
         
@@ -51,20 +66,20 @@
             text-decoration: none;
             text-align: center;
             font-size: 25px;
-            color: #e2e2e2;
+            color: #474747;
             display: block;
-            border-bottom: 3px solid transparent;
+            /*border-bottom: 3px solid transparent;*/
         }
         /* When you mouse over the navigation links, change their color */
         
         .sidenav a:hover {
-            color: #f1f1f1;
-            background-color: rgb(165, 165, 165)
+            background-color: #ccc
         }
         /* Style page content */
         
         .sidenav a.active {
-            border-bottom: 3px solid #89cdd6;
+            /*border-bottom: 3px solid #89cdd6;*/
+            background-color: #ccc
         }
         /* Name display */
         
@@ -73,7 +88,7 @@
             text-decoration: none;
             text-align: center;
             font-size: 30px;
-            color: #f8f8f8;
+            color: #222222;
             display: block;
         }
         /* Brief about section */
@@ -83,7 +98,7 @@
             text-decoration: none;
             text-align: center;
             font-size: 20px;
-            color: #f8f8f8;
+            color: #474747;
             display: block;
         }
         /* Smaller Screen Fix */
@@ -97,38 +112,148 @@
             }
         }
         
+        * {
+            box-sizing: border-box
+        }
+        /* Style the tab */
+        
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #e6e8e6;
+            width: 30%;
+            height: 400px;
+        }
+        /* Style the buttons that are used to open the tab content */
+        
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: 474747;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        /* Change background color of buttons on hover */
+        
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        /* Create an active/current "tab button" class */
+        
+        .tab button.active {
+            background-color: #ccc;
+        }
+        /* Style the tab content */
+        
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 400px;
+        }
+        
         .main {
+            height: auto;
+            /*box-shadow: 5px 5px 10px grey;*/
             margin-left: 250px;
             /* Same as the width of the sidebar */
             padding: 0px 10px;
+        }
+        
+        .shadow {
+            box-shadow: 5px 5px 10px grey;
+            overflow: auto;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="sidenav">
-        <img src="./images/avatar.jpg" alt="Avatar" width="100" height="100">
+    <div class="sidenav shadow">
+        <img src="./images/avatar.jpg" alt="Avatar" width="200" height="200">
         <name>Cameron Cook</name>
-        <about>UTD Software Engineering </about>
+        <about>UTD Computer Science </about>
         <a class="active" href="./index.html">Home</a>
         <a href="./projects.html">Projects (Soon)</a>
-        <a href="./blog.html">Blogs (Soon)</a>
+        <a href="./blog.html">Blog (Soon)</a>
         <a href="https://github.com/CameronRCook">GitHub</a>
         <a href="https://www.linkedin.com/in/cameron-c-86b889119/">LinkedIn</a>
         <a href="#" class="right">Contact (Soon)</a>
     </div>
 
     <div class="main">
-        <div class="header">
+        <div class="header teal shadow" style="margin-bottom:2%" ">
             <h1>About Me</h1>
             <p>I am a Computer Science undegraduate at the University of Texas at Dallas.</p>
         </div>
 
+        <div class="shadow ">
+            <div class="subheader salmon "">
+            <h1>Experience</h1>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
+            <button class="tablinks" onclick="openExperience(event, 'OL')">Orientation Leader</button>
+            <button class="tablinks" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
+        </div>
+
+        <div id="OIT" class="tabcontent">
+            <h3>UTD Office of Information Technology</h3>
+            <p><i>July 2019 - Present</i></p>
+            <p>The OIT Help Desk’s primary focus is to provide quality technical support to the UTD population for UTD systems and services, approved technologies, and connectivity on UTD networks. This support is provided over the phone and email, using
+                remote access tools including chat, and in-person at the ROC walk-up support location.</p>
+        </div>
+
+        <div id="OL" class="tabcontent">
+            <h3>UTD Student Transition Programs</h3>
+            <p><i>March 2019 - August 2019</i></p>
+            <p>An Orientation Leader is a current student mentor for the new students throughout their transition from High School to College. We represent and promote UT Dallas to new students, their families, and the entire campus community. We work to
+                serve as a role model for UTD students and provide advising and assistance in all areas of student life.</p>
+        </div>
+
+        <div id="BCMUD" class="tabcontent">
+            <h3>Brushy Creek Municipal Utilities Disctrict</h3>
+            <p><i>August 2016 - August 2018</i></p>
+            <p>A Headlifeguard assumes a managerial role in careing for the day-to-day operations of the pools, office, and lifeguard management. We are responsible for scheduling, supplie management, and supervision of the lifeguards. We take responsibility
+                for the 4 pools and any lifeguards or supervisors who are working for BCMUD at the pools.</p>
+        </div>
     </div>
 
-    <script src="js/scripts.js">
+    </div>
+
+    <script>
+        function openExperience(evt, experience) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(experience).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        //Start with defaultOpen active
+        document.getElementById("defaultOpen").click();
     </script>
 </body>
 
-</html>
+</html>22
