@@ -88,13 +88,15 @@
         /* When you mouse over the navigation links, change their color */
         
         .sidenav a:hover {
-            background-color: #ddd
+            background-color: #ddd;
+            border-radius: 15px;
         }
         /* Style page content */
         
         .sidenav a.active {
             /*border-bottom: 3px solid #89cdd6;*/
-            background-color: #ccc
+            background-color: #ccc;
+            border-radius: 15px;
         }
         /* Name display */
         
@@ -133,10 +135,9 @@
         /* Style the tab */
         
         .tab {
-            float: left;
             background-color: #e6e8e6;
-            width: auto;
-            height: auto;
+            overflow: hidden;
+            /* Make the container element behave like a table */
         }
         /* Style the buttons that are used to open the tab content */
         
@@ -145,7 +146,7 @@
             background-color: inherit;
             color: 474747;
             padding: 22px 16px;
-            width: 100%;
+            float: left;
             border: none;
             outline: none;
             text-align: left;
@@ -167,7 +168,7 @@
         .tabcontent {
             float: left;
             padding: 0px 12px;
-            width: 70%;
+            max-width: 100%;
             border-left: none;
             height: auto;
         }
@@ -226,6 +227,14 @@
             box-shadow: 5px 5px 10px grey;
             overflow: auto;
         }
+        
+        .rounded {
+            border-radius: 25px 25px 10px 10px;
+        }
+        
+        .roundbot {
+            border-radius: 0px 0px 10px 10px;
+        }
     </style>
 
 </head>
@@ -244,28 +253,28 @@
     </div>
 
     <div class="main">
-        <div class="header teal shadow " style="margin-bottom:20px">
+        <div class="header teal shadow rounded " style="margin-bottom:20px">
             <h1>About Me</h1>
             <p>I am a Computer Science undegraduate at the University of Texas at Dallas.</p>
         </div>
 
-        <div class="shadow ">
+        <div class="shadow rounded">
             <div class="subheader salmon ">
                 <h1>Experience</h1>
             </div>
 
-            <div class="tab">
-                <button class="tablinks" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
+            <div class="tab roundbot">
+                <button class="tablinks" style="border-radius: 0px 0px 0px 10px;" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
                 <button class="tablinks" onclick="openExperience(event, 'PDT')">Treasurer</button>
                 <button class="tablinks" onclick="openExperience(event, 'OL')">Orientation Leader</button>
-                <button class="tablinks" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
+                <button class="tablinks" style="border-radius: 0px 0px 10px 0px;" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
             </div>
 
             <div id="OIT" class="tabcontent">
                 <h3>UTD Office of Information Technology</h3>
                 <p><i>July 2019 - Present</i></p>
                 <p>The OIT Help Desk’s primary focus is to provide quality technical support to the UTD population for UTD systems and services, approved technologies, and connectivity on UTD networks. This support is provided over the phone and email, using
-                    remote access tools including chat, and in-person at the ROC walk-up support location.</p>
+                    remote access tools, and in-person at the ROC walk-up support location.</p>
             </div>
 
             <div id="PDT" class="tabcontent">
@@ -278,21 +287,21 @@
             <div id="OL" class="tabcontent">
                 <h3>UTD Student Transition Programs</h3>
                 <p><i>March 2019 - August 2019</i></p>
-                <p>An Orientation Leader is a current student mentor for the new students throughout their transition from High School to College. We represent and promote UT Dallas to new students, their families, and the entire campus community. We work
-                    to serve as a role model for UTD students and provide advising and assistance in all areas of student life.</p>
+                <p>An Orientation Leader is a current student mentor for the new students throughout their transition from High School to College. We represent UT Dallas to new students, their families, and the campus community. We serve as a role model
+                    for UTD students and provide advising and assistance in all areas of student life.</p>
             </div>
 
             <div id="BCMUD" class="tabcontent">
                 <h3>Brushy Creek Municipal Utilities Disctrict</h3>
                 <p><i>August 2016 - August 2018</i></p>
-                <p>A Headlifeguard assumes a managerial role in careing for the day-to-day operations of the pools, office, and lifeguard management. We are responsible for scheduling, supplie management, and supervision of the lifeguards. We take responsibility
-                    for the 4 pools and any lifeguards or supervisors who are working for BCMUD at the pools.</p>
+                <p>A Headlifeguard assumes a managerial role in careing for the day-to-day operations of the pools, office, and lifeguard management. We are responsible for scheduling, supply management, and supervision of the lifeguards among all 4 of the
+                    districts pools. Having safety as our number one priority.</p>
             </div>
         </div>
 
         <div id="clear" style="clear:both; margin-bottom:20px"></div>
 
-        <div class="shadow">
+        <div class="shadow rounded">
             <div class="subheader green">
                 <h1>Education</h1>
             </div>
@@ -347,4 +356,4 @@
     </script>
 </body>
 
-</html>222
+</html>
