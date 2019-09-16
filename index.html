@@ -20,16 +20,19 @@
             font-family: "Trebuchet MS", Helvetica, sans-serif;
         }
         
-        .teal {
-            background: #89cdd6;
+        .tealBorder {
+            border-bottom: 5px solid #89cdd6;
+            border-radius: 10px
         }
         
-        .salmon {
-            background: #f1bf98;
+        .salmonBorder {
+            border-bottom: 5px solid #f1bf98;
+            border-radius: 10px
         }
         
-        .green {
-            background: #79b791;
+        .greenBorder {
+            border-bottom: 5px solid #79b791;
+            border-radius: 10px
         }
         
         .blackoutline {
@@ -59,6 +62,7 @@
             text-align: left;
             font-size: 20px;
             color: white;
+            background-color: #e6e8e6;
         }
         
         .subheader {
@@ -66,6 +70,7 @@
             text-align: left;
             font-size: 20px;
             color: white;
+            background-color: #e6e8e6;
         }
         /* Style the top navigation bar */
         
@@ -83,7 +88,7 @@
         /* The navigation menu links */
         
         .sidenav a {
-            padding: 6px 8px 6px 16px;
+            padding: 6px 6px 6px 6px;
             text-decoration: none;
             text-align: center;
             font-size: 25px;
@@ -95,14 +100,14 @@
         
         .sidenav a:hover {
             background-color: #ddd;
-            border-radius: 15px;
         }
         /* Style page content */
         
         .sidenav a.active {
             /*border-bottom: 3px solid #89cdd6;*/
             background-color: #ccc;
-            border-radius: 15px;
+            text-decoration: underline;
+            text-decoration-color: #f1bf98;
         }
         /* Name display */
         
@@ -255,45 +260,45 @@
     </div>
 
     <div class="main">
-        <div class="header teal shadow rounded " style="margin-bottom:20px">
+        <div class="header tealBorder shadow rounded " style="margin-bottom:20px">
             <h1>About Me</h1>
             <p>I am a Computer Science undegraduate at the University of Texas at Dallas.</p>
         </div>
 
         <div class="shadow rounded">
-            <div class="subheader salmon ">
+            <div class="subheader ">
                 <h1>Experience</h1>
             </div>
 
-            <div class="tab roundbot">
-                <button class="tablinks" style="border-radius: 0px 0px 0px 10px;" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
+            <div class="tab roundbot salmonBorder">
+                <button class="tablinks" style="border-radius: 0px 0px 0px 8px;" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
                 <button class="tablinks" onclick="openExperience(event, 'PDT')">Treasurer</button>
                 <button class="tablinks" onclick="openExperience(event, 'OL')">Orientation Leader</button>
-                <button class="tablinks" style="border-radius: 0px 0px 10px 0px;" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
+                <button class="tablinks" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
             </div>
 
-            <div id="OIT" class="tabcontent">
+            <div id="OIT" class="tabcontent salmonBorder">
                 <h3>UTD Office of Information Technology</h3>
                 <p><i>July 2019 - Present</i></p>
                 <p>The OIT Help Desk’s primary focus is to provide quality technical support to the UTD population for UTD systems and services, approved technologies, and connectivity on UTD networks. This support is provided over the phone and email, using
                     remote access tools, and in-person at the ROC walk-up support location.</p>
             </div>
 
-            <div id="PDT" class="tabcontent">
+            <div id="PDT" class="tabcontent salmonBorder">
                 <h3>Phi Delta Theta Fraternity: Executive Officer</h3>
                 <p><i>April 2019 - Present</i></p>
                 <p>The Treasurer is mostly responsiple for setting financial expectations, guidelines, and making sure money is spent effeciently. The Treasurer spends time Working with representatives from each committee to decide how the chapter's budget
                     (~ $30,000) should be split amongst all the parties requesting money.</p>
             </div>
 
-            <div id="OL" class="tabcontent">
+            <div id="OL" class="tabcontent salmonBorder">
                 <h3>UTD Student Transition Programs</h3>
                 <p><i>March 2019 - August 2019</i></p>
                 <p>An Orientation Leader is a current student mentor for the new students throughout their transition from High School to College. We represent UT Dallas to new students, their families, and the campus community. We serve as a role model
                     for UTD students and provide advising and assistance in all areas of student life.</p>
             </div>
 
-            <div id="BCMUD" class="tabcontent">
+            <div id="BCMUD" class="tabcontent salmonBorder">
                 <h3>Brushy Creek Municipal Utilities Disctrict</h3>
                 <p><i>August 2016 - August 2018</i></p>
                 <p>A Headlifeguard assumes a managerial role in careing for the day-to-day operations of the pools, office, and lifeguard management. We are responsible for scheduling, supply management, and supervision of the lifeguards among all 4 of the
@@ -304,11 +309,11 @@
         <div id="clear" style="clear:both; margin-bottom:20px"></div>
 
         <div class="shadow rounded">
-            <div class="subheader green">
+            <div class="subheader">
                 <h1>Education</h1>
             </div>
-            <button class="accordion ">The University of Texas at Dallas: Undegraduate of Computer Science</button>
-            <div class="panel">
+            <button class="accordion">The University of Texas at Dallas: Undegraduate of Computer Science</button>
+            <div class="panel greenBorder" style="border-radius: 10px">
                 <p><i>Expected Graduation: May 2022</i></p>
                 <p>Class load of Calculus, Linear Algebra, Discrete Mathematics, Advanced Programming (C++), Computer Architecture, etc. Plan on taking a focus on Information Assurance through.</p>
                 <p>GPA: 3.XX</P>
