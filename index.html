@@ -10,7 +10,7 @@
     <meta name="author" content="Cameron Cook">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* Background Color Scheme */
         
@@ -139,6 +139,32 @@
                 font-size: 18px;
             }
         }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        
+        .fa-github {
+            background: purple;
+            color: white;
+        }
         /* Style the tab */
         
         .tab {
@@ -254,24 +280,24 @@
         <a class="active" href="./index.html">Home</a>
         <a href="./projects.html">Projects (Soon)</a>
         <a href="./blog.html">Blog (Soon)</a>
-        <a href="https://github.com/CameronRCook">GitHub</a>
-        <a href="https://www.linkedin.com/in/cameron-c-86b889119/">LinkedIn</a>
-        <a href="#" class="right">Contact (Soon)</a>
+        <a href="https://www.instagram.com/cameron.cook0/?hl=en" style="color: white; right: 20% " class="fa fa-instagram "></a>
+        <a href="https://github.com/CameronRCook" style="color: white; right: 40% " class="fa fa-github "></a>
+        <a href="https://www.linkedin.com/in/cameron-c-86b889119" style="color: white; right: 60% " class="fa fa-linkedin "></a>
     </div>
 
     <div class="main">
         <div class="header tealBorder shadow rounded " style="margin-bottom:20px">
-            <h1>About Me</h1>
+            <h1 style="text-decoration: underline; text-decoration-color:#89cdd6">About Me</h1>
             <p>I am a Computer Science undegraduate at the University of Texas at Dallas.</p>
         </div>
 
         <div class="shadow rounded">
             <div class="subheader ">
-                <h1>Experience</h1>
+                <h1 style="text-decoration: underline; text-decoration-color:#f1bf98">Experience</h1>
             </div>
 
-            <div class="tab roundbot salmonBorder">
-                <button class="tablinks" style="border-radius: 0px 0px 0px 8px;" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
+            <div class="tab">
+                <button class="tablinks" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
                 <button class="tablinks" onclick="openExperience(event, 'PDT')">Treasurer</button>
                 <button class="tablinks" onclick="openExperience(event, 'OL')">Orientation Leader</button>
                 <button class="tablinks" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
@@ -310,7 +336,7 @@
 
         <div class="shadow rounded">
             <div class="subheader">
-                <h1>Education</h1>
+                <h1 style="text-decoration: underline; text-decoration-color:#79b791">Education</h1>
             </div>
             <button class="accordion">The University of Texas at Dallas: Undegraduate of Computer Science</button>
             <div class="panel greenBorder" style="border-radius: 10px">
