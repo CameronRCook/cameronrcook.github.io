@@ -1,0 +1,84 @@
+.avatar {
+    border: 5px solid #89cdd6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e6e8e6;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: #474747;
+    display: block;
+    /*border-bottom: 3px solid transparent;*/
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    background-color: #ddd;
+}
+
+
+/* Style page content */
+
+.sidenav a.active {
+    /*border-bottom: 3px solid #89cdd6;*/
+    background-color: #ccc;
+    text-decoration: underline;
+    text-decoration-color: #f1bf98;
+}
+
+
+/* Name display */
+
+.sidenav name {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: #222222;
+    display: block;
+}
+
+
+/* Brief about section */
+
+.sidenav about {
+    padding: 6px 8px 32px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #474747;
+    display: block;
+}
+
+
+/* Smaller Screen Fix */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

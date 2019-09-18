@@ -1,0 +1,29 @@
+ .tealBorder {
+     border-bottom: 5px solid #89cdd6;
+     border-radius: 10px;
+ }
+ 
+ .salmonBorder {
+     border-bottom: 5px solid #f1bf98;
+     border-radius: 10px;
+ }
+ 
+ .greenBorder {
+     border-bottom: 5px solid #79b791;
+     border-radius: 10px;
+ }
+ 
+ .yellowBorder {
+     border-bottom: 5px solid #f6f4d2;
+     border-radius: 10px;
+ }
+ 
+ .redBorder {
+     border-bottom: 5px solid #c37d92;
+     border-radius: 10px;
+ }
+ 
+ .shadow {
+     box-shadow: 5px 5px 10px grey;
+     overflow: auto;
+ }
