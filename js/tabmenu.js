@@ -18,3 +18,5 @@ function openExperience(evt, experience) {
     document.getElementById(experience).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultOpen").click();
