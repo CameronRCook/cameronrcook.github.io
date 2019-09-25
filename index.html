@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/tabmenu.css">
     <link rel="stylesheet" href="./css/socialbuttons.css">
     <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/timeline.css">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,6 +25,10 @@
             box-sizing: border-box;
             color: #222222;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: whitesmoke;
         }
         
         img {
@@ -86,57 +91,17 @@
         <a href="https://www.linkedin.com/in/cameron-c-86b889119" style="color: white; right: 60% " class="fa fa-linkedin "></a>
     </div>
 
+
     <div class="main">
         <div class="header tealBorder shadow rounded " style="margin-bottom:20px">
             <h1 style="text-decoration: underline; text-decoration-color:#89cdd6">About Me</h1>
-            <p>I am a Computer Science undegraduate at the University of Texas at Dallas. I enjoy working closely with teams and developing my abilities as an engineer and leader.</p>
+            <p>I am a Computer Science undergraduate at the University of Texas at Dallas. I enjoy working closely with teams and developing my abilities as an engineer and leader.</p>
             <p>My free time is spent mountain biking, driving, and learning new skills.</p>
-        </div>
-
-        <div class="shadow rounded">
-            <div class="subheader ">
-                <h1 style="text-decoration: underline; text-decoration-color:#f1bf98">Experience</h1>
-            </div>
-
-            <div class="tab">
-                <button class="tablinks" onclick="openExperience(event, 'OIT')" id=defaultOpen>Support Analyst</button>
-                <button class="tablinks" onclick="openExperience(event, 'PDT')">Treasurer</button>
-                <button class="tablinks" onclick="openExperience(event, 'OL')">Orientation Leader</button>
-                <button class="tablinks" onclick="openExperience(event, 'BCMUD')">Head Lifeguard</button>
-            </div>
-
-            <div id="OIT" class="tabcontent salmonBorder">
-                <h3>UTD Office of Information Technology</h3>
-                <p><i>July 2019 - Present</i></p>
-                <p>The OIT Help Desk’s primary focus is to provide quality technical support to the UTD population for UTD systems and services, approved technologies, and connectivity on UTD networks. This support is provided over the phone and email, using
-                    remote access tools, and in-person at the ROC walk-up support location.</p>
-            </div>
-
-            <div id="PDT" class="tabcontent salmonBorder">
-                <h3>Phi Delta Theta Fraternity: Executive Officer</h3>
-                <p><i>April 2019 - Present</i></p>
-                <p>The Treasurer is mostly responsiple for setting financial expectations, guidelines, and making sure money is spent effeciently. The Treasurer spends time Working with representatives from each committee to decide how the chapter's budget
-                    (~ $30,000) should be split amongst all the parties requesting money.</p>
-            </div>
-
-            <div id="OL" class="tabcontent salmonBorder">
-                <h3>UTD Student Transition Programs</h3>
-                <p><i>March 2019 - August 2019</i></p>
-                <p>An Orientation Leader is a current student mentor for the new students throughout their transition from High School to College. We represent UT Dallas to new students, their families, and the campus community. We serve as a role model
-                    for UTD students and provide advising and assistance in all areas of student life.</p>
-            </div>
-
-            <div id="BCMUD" class="tabcontent salmonBorder">
-                <h3>Brushy Creek Municipal Utilities Disctrict</h3>
-                <p><i>August 2016 - August 2018</i></p>
-                <p>A Headlifeguard assumes a managerial role in careing for the day-to-day operations of the pools, office, and lifeguard management. We are responsible for scheduling, supply management, and supervision of the lifeguards among all 4 of the
-                    districts pools. Having safety as our number one priority.</p>
-            </div>
         </div>
 
         <div id="clear" style="clear:both; margin-bottom:20px"></div>
 
-        <div class="shadow rounded">
+        <div class="shadow rounded" style="margin-bottom: 20px">
             <div class="subheader">
                 <h1 style="text-decoration: underline; text-decoration-color:#79b791">Education</h1>
             </div>
@@ -147,7 +112,46 @@
                 <p>GPA: 3.XX</P>
             </div>
         </div>
+
+        <div class="subheader rounded shadow">
+            <h1 style="text-decoration: underline; text-decoration-color:#f1bf98">Experience</h1>
+        </div>
+        <div class="timeline" style="margin-bottom:20px">
+            <div class="container left">
+                <div class="content shadow salmonBorder">
+                    <h3>UTD Office of Information Technology</h3>
+                    <p><i>July 2019 - Present</i></p>
+                    <p>The OIT Help Desk’s primary focus is to provide quality technical support to the UTD population for UTD systems and services, approved technologies, and connectivity on UTD networks. This support is provided over the phone and email,
+                        using remote access tools, and in-person at the ROC walk-up support location.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content shadow salmonBorder">
+                    <h3>Phi Delta Theta Fraternity: Executive Officer</h3>
+                    <p><i>April 2019 - Present</i></p>
+                    <p>The Treasurer is mostly responsible for setting financial expectations, guidelines, and making sure money is spent efficiently. The Treasurer spends time Working with representatives from each committee to decide how the chapter's
+                        budget (~ $30,000) should be split amongst all the parties requesting money.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content shadow salmonBorder">
+                    <h3>UTD Student Transition Programs</h3>
+                    <p><i>March 2019 - August 2019</i></p>
+                    <p>An Orientation Leader is a current student mentor for the new students throughout their transition from High School to College. We represent UT Dallas to new students, their families, and the campus community. We serve as a role model
+                        for UTD students and provide advising and assistance in all areas of student life.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content shadow salmonBorder">
+                    <h3>Brushy Creek Municipal Utilities Disctrict</h3>
+                    <p><i>August 2016 - August 2018</i></p>
+                    <p>A Headlifeguard assumes a managerial role in careing for the day-to-day operations of the pools, office, and lifeguard management. We are responsible for scheduling, supply management, and supervision of the lifeguards among all 4
+                        of the districts pools. Having safety as our number one priority.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="js/accordion.js"></script>
     <script src="js/tabmenu.js"></script>
 </body>

@@ -1,4 +1,4 @@
-function openExperience(evt, experience) {
+function openTab(evt, tab) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -15,7 +15,7 @@ function openExperience(evt, experience) {
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(experience).style.display = "block";
+    document.getElementById(tab).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
