@@ -42,8 +42,9 @@ f
     border-radius: 0px 0px 10px 10px;
     float: left;
     padding: 0px 12px;
-    max-width: 100%;
+    width: 100%;
     border-left: none;
     height: auto;
     background-color: white;
+    overflow: hidden;
 }

@@ -1,53 +1,112 @@
 /* Container for skill bars */
 
-.skillContainer {
+.skillcontainer {
     width: 100%;
-    /* Full width */
-    background-color: #ddd;
-    /* Grey background */
+    background-color: #e6e8e6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px
 }
 
 .skills {
     text-align: right;
-    /* Right-align text */
     padding-top: 10px;
-    /* Add top padding */
     padding-bottom: 10px;
-    /* Add bottom padding */
     color: white;
-    /* White text color */
+    border-radius: 10px;
+}
+
+
+/*  Programming Languages   */
+
+
+/*  Left    */
+
+.csharp {
+    width: 85%;
+    background-color: #89cdd6;
+}
+
+.css {
+    width: 75%;
+    background-color: #79b791;
+}
+
+.js {
+    width: 60%;
+    background-color: #f1bf98;
 }
 
 .html {
-    width: 90%;
-    background-color: #4CAF50;
+    width: 50%;
+    background-color: #c37d92;
 }
 
 
-/* Green */
+/*  Right   */
 
-.css {
+.cpp {
     width: 80%;
-    background-color: #2196F3;
+    background-color: #89cdd6;
+}
+
+.java {
+    width: 70%;
+    background-color: #79b791;
+}
+
+.python {
+    width: 70%;
+    background-color: #f1bf98;
+}
+
+.mips {
+    width: 50%;
+    background-color: #c37d92;
 }
 
 
-/* Blue */
+/*  Operating System Skills */
 
-.js {
-    width: 65%;
-    background-color: #f44336;
+.win {
+    width: 95%;
+    background-color: #89cdd6;
+}
+
+.arch {
+    width: 80%;
+    background-color: #79b791;
+}
+
+.mac {
+    width: 70%;
+    background-color: #f1bf98;
+}
+
+.ubuntu {
+    width: 40%;
+    background-color: #c37d92;
 }
 
 
-/* Red */
+/* Software and Tools   */
 
-.php {
-    width: 60%;
-    background-color: #808080;
+.photoshop {
+    width: 100%;
+    background-color: #89cdd6;
 }
 
+.mssuite {
+    width: 90%;
+    background-color: #79b791;
+}
 
-/* Dark Grey */
+.max {
+    width: 70%;
+    background-color: #f1bf98;
+}
 
-s
+.git {
+    width: 50%;
+    background-color: #c37d92;
+}
