@@ -1,0 +1,63 @@
+/* Background Color Scheme */
+
+* {
+    box-sizing: border-box;
+    color: #222222;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Style for Header, will have to update for other imgs */
+
+.header {
+    padding: 1%;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    background-color: #e6e8e6;
+}
+
+.subheader {
+    padding: 1%;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    background-color: #e6e8e6;
+}
+
+
+/* Style the top navigation bar */
+
+.main {
+    height: auto;
+    /*box-shadow: 5px 5px 10px grey;*/
+    margin-left: 250px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+.rounded {
+    border-radius: 25px 25px 10px 10px;
+}
+
+.roundbot {
+    border-radius: 0px 0px 10px 10px;
+}
