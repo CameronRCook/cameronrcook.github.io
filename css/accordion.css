@@ -10,6 +10,7 @@
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 20px;
 }
 
 
@@ -26,7 +27,7 @@
 .accordion:after {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 20px;
     color: #777;
     float: right;
     margin-left: 5px;
