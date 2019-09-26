@@ -7,7 +7,7 @@
 }
 
 p {
-    font-size: 20px;
+    font-size: smaller;
 }
 
 body {
@@ -30,7 +30,7 @@ img {
 .header {
     padding: 1%;
     text-align: left;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     background-color: #e6e8e6;
 }
@@ -38,7 +38,7 @@ img {
 .subheader {
     padding: 1%;
     text-align: left;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     background-color: #e6e8e6;
 }
