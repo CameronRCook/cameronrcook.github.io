@@ -32,7 +32,20 @@ img {
     text-align: left;
     font-size: 14px;
     color: white;
+    background-color: white;
+}
+
+.main button {
     background-color: #e6e8e6;
+}
+
+.main button:hover {
+    background-color: #ddd;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.main button.active {
+    background-color: #ccc;
 }
 
 .subheader {
@@ -40,7 +53,7 @@ img {
     text-align: left;
     font-size: 14px;
     color: white;
-    background-color: #e6e8e6;
+    background-color: white;
 }
 
 
@@ -55,7 +68,7 @@ img {
 }
 
 .rounded {
-    border-radius: 25px 25px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .roundbot {

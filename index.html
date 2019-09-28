@@ -27,27 +27,32 @@
         <name>Cameron Cook</name>
         <about>UTD Software Engineering</about>
         <a class="active" href="./index.html">Home</a>
-        <a href="./projects.html">Projects (Soon)</a>
-        <a href="./blog.html">Blog (Soon)</a>
+        <a href="#education" style="margin-top: 20px;">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="https://www.instagram.com/cameron.cook0/?hl=en" style="color: white; left: 25px " class="fa fa-instagram "></a>
         <a href="https://github.com/CameronRCook" style="color: white; left: 75px " class="fa fa-github "></a>
         <a href="https://www.linkedin.com/in/cameron-c-86b889119" style="color: white; left: 125px " class="fa fa-linkedin "></a>
     </div>
 
     <div class="main">
-        <div class="header tealBorder shadow rounded " style="margin-bottom:20px">
+        <div id="about" class="header tealBorder shadow rounded " style="margin-bottom:40px">
             <h1 style="text-decoration: underline; text-decoration-color:#89cdd6">About Me</h1>
             <p style="font-size: small">I am a Computer Science undergraduate at the University of Texas at Dallas. I enjoy working closely with teams and developing my abilities as an engineer and leader.</p>
             <p style="font-size: small">My free time is spent mountain biking, driving, and learning new skills.</p>
         </div>
 
+        <div id="mainnav" style="width: 100%; margin-bottom:20px">
+
+        </div>
+
         <div id="clear" style="clear:both; margin-bottom:20px"></div>
 
-        <div class="shadow rounded" style="margin-bottom: 20px">
+        <div id="education" class="shadow rounded" style="margin-bottom: 20px; scroll-behavior: smooth">
             <div class="subheader">
                 <h1 style="text-decoration: underline; text-decoration-color:#79b791">Education</h1>
             </div>
-            <button class="accordion " style="font-size: smaller">The University of Texas at Dallas: Undergraduate of Software Engineering</button>
+            <button class="accordion " style="font-size: small">The University of Texas at Dallas: Undergraduate of Software Engineering</button>
             <div class="panel greenBorder" style="border-radius: 10px ">
                 <p><i>Expected Graduation: May 2022</i></p>
                 <p>Class load of Calculus, Linear Algebra, Discrete Mathematics, Advanced Programming (C++), Computer Architecture, etc. Plan on taking a focus on Information Assurance through a certification and a minor in Computer Science.</p>
@@ -55,8 +60,8 @@
             </div>
         </div>
 
-        <div class="subheader rounded shadow">
-            <h1 style="text-decoration: underline; text-decoration-color:#f1bf98">Experience</h1>
+        <div id="experience" class="subheader rounded shadow">
+            <h1 style="text-decoration: underline; text-decoration-color:#f1bf98; scroll-behavior: smooth">Experience</h1>
         </div>
         <div class="timeline" style="margin-bottom:20px">
             <div class="container left">
@@ -93,15 +98,15 @@
             </div>
         </div>
 
-        <div class="shadow rounded">
+        <div id="skills" class="shadow rounded">
             <div class="subheader ">
                 <h1 style="text-decoration: underline; text-decoration-color:#c37d92">Skills</h1>
             </div>
 
             <div class="tab">
-                <button class="tablinks" style="font-size: smaller" onclick="openTab(event, 'PL')" id=defaultOpen>Programming Languages</button>
-                <button class="tablinks" style="font-size: smaller" onclick="openTab(event, 'OS')">Operating Systems</button>
-                <button class="tablinks" style="font-size: smaller" onclick="openTab(event, 'ST')">Software and Tools</button>
+                <button class="tablinks" style="font-size: smaller; margin-right: 20px; margin-left: 20px" onclick="openTab(event, 'PL')" id=defaultOpen>Programming Languages</button>
+                <button class="tablinks" style="font-size: smaller; margin-right: 20px;" onclick="openTab(event, 'OS')">Operating Systems</button>
+                <button class="tablinks" style="font-size: smaller; margin-right: 20px;" onclick="openTab(event, 'ST')">Software and Tools</button>
             </div>
 
             <div id="PL" class="tabcontent ">
@@ -194,6 +199,13 @@
                 <div class="skillcontainer ">
                     <div class="skills git">50%</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="shadow " style="height: auto; margin-top: 5%; padding: 15px 15px 0px 15px">
+            <div>
+                <a style="float: right" href="#about">Back to Top</a>
+                <p style="text-align: center">Cameron Cook © 2019</p>
             </div>
         </div>
     </div>
