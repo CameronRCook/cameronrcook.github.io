@@ -12,14 +12,32 @@
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    left: 25px;
 }
 
 .fa-instagram {
     background: #125688;
     color: white;
+    left: 75px;
 }
 
 .fa-github {
     background: purple;
     color: white;
+    left: 125px;
+}
+
+@media screen and (max-height: 450px) {
+    .fa {
+        bottom: auto;
+    }
+    .fa-linkedin {
+        left: 10px;
+    }
+    .fa-instagram {
+        left: 60px;
+    }
+    .fa-github {
+        left: 110px;
+    }
 }

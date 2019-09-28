@@ -6,8 +6,13 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-p {
-    font-size: smaller;
+.main {
+    height: auto;
+    /*box-shadow: 5px 5px 10px grey;*/
+    margin-left: 200px;
+    /* Same as the width of the sidebar */
+    padding: 0px 15px;
+    font-size: 14px;
 }
 
 body {
@@ -30,7 +35,7 @@ img {
 .header {
     padding: 1%;
     text-align: left;
-    font-size: 14px;
+    font-size: small;
     color: white;
     background-color: #e6e8e6;
 }
@@ -38,7 +43,7 @@ img {
 .subheader {
     padding: 1%;
     text-align: left;
-    font-size: 14px;
+    font-size: small;
     color: white;
     background-color: #e6e8e6;
 }
@@ -46,18 +51,17 @@ img {
 
 /* Style the top navigation bar */
 
-.main {
-    height: auto;
-    /*box-shadow: 5px 5px 10px grey;*/
-    margin-left: 200px;
-    /* Same as the width of the sidebar */
-    padding: 0px 15px;
-}
-
 .rounded {
     border-radius: 25px 25px 10px 10px;
 }
 
 .roundbot {
     border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .main {
+        margin-left: 180px;
+        font-size: 12px;
+    }
 }
