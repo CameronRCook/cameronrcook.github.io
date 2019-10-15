@@ -3,36 +3,124 @@
 <html lang="en">
 
 <head>
+    <title>Cameron Cook | Projects</title>
+
     <meta charset="utf-8">
-    <title>Cameron Cook | Blog</title>
-    <meta name="description" content="Blog">
+    <meta name="description" content="projects">
     <meta name="author" content="Cameron Cook">
+    <meta name="screen" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <style>
-        .header {
-            padding: 2%;
-            /* some padding */
-            text-align: center;
-            /* center the text */
-            background: orange;
-            /* green background */
-            color: white;
-            /* white text color */
-        }
-    </style>
+    <link rel="stylesheet" href="./css/mainstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/socialbuttons.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/tabmenu.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
 </head>
 
 <body>
-    <script src="js/script.js">
-    </script>
-
-    <div class="header">
-        <h1>A projects page (Coming Soon)</h1>
-        <p>ETA: UNKNOWN</p>
+    <div class="sidenav shadow">
+        <img src="./images/headshot.jpg" class="avatar shadow" alt="Avatar">
+        <name>Cameron Cook</name>
+        <about>UTD Computer Science</about>
+        <a class="" href="./index.html">Home</a>
+        <a class="active" href="./projects.html">Projects</a>
+        <a class="" href="./blog.html">Blog (Soon)</a>
+        <a class="" href="./Contact.html">Contact (Soon)</a>
+        <a href="#minivation" style="margin-top: 30px;">Mini-Vation</a>
+        <a href="https://www.instagram.com/cameron.cook0/?hl=en" style="color: white; left: 25px " class="fa fa-instagram "></a>
+        <a href="https://github.com/CameronRCook" style="color: white; left: 75px " class="fa fa-github "></a>
+        <a href="https://www.linkedin.com/in/cameron-c-86b889119" style="color: white; left: 125px " class="fa fa-linkedin "></a>
     </div>
 
+    <div class="main">
+        <div id="minivation" class="header tealBorder shadow rounded">
+            <h1 style="text-decoration: underline; text-decoration-color:#89cdd6">Mini-Vation</h1>
+            <p><i>November 2017 - August 2018</i></p>
+            <p style="font-size: 1em">Mini-Vation is the culmination of the Skills USA 2018 project between my partner (Zach Handshoe) and myself. The project developed using Unity 2018 with art assets from 3DS Max and Photoshop. In it's current state, Mini-Vation took 2nd place
+                at the state level. After the competition, the project has been mostly left untouched. </p>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="./images/MiniVation/imagezero.png" style="border-radius: 10px 10px 10px 10px;width:100%; box-shadow: 5px 5px 10px grey;">
+                    <div class="text">Main Menu (PC)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="./images/MiniVation/imagesix.png" style="border-radius: 10px 10px 10px 10px;width:100%; box-shadow: 5px 5px 10px grey;">
+                    <div class="text">Race Game Mode (PC)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="./images/MiniVation/imagethree.jpg" style="border-radius: 10px 10px 10px 10px;box-shadow: 5px 5px 10px grey;width:100%">
+                    <div class="text">Action Shot (Android)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="./images/MiniVation/imagefour.jpg" style="border-radius: 10px 10px 10px 10px;box-shadow: 5px 5px 10px grey;width:100%">
+                    <div class="text">Action Shot (Android)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="./images/MiniVation/imagefive.jpg" style="border-radius: 10px 10px 10px 10px;box-shadow: 5px 5px 10px grey;width:100%">
+                    <div class="text">Action Shot (Android)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="./images/MiniVation/imageone.jpg" style="border-radius: 10px 10px 10px 10px;box-shadow: 5px 5px 10px grey;width:100%">
+                    <div class="text">Action Shot (Android)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="./images/MiniVation/imagetwo.jpg" style="border-radius: 10px 10px 10px 10px;box-shadow: 5px 5px 10px grey;width:100%">
+                    <div class="text">Action Shot (Android)</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+            <p style="font-size: 1em">While the game has been left alone, Zach and I have brained stormed ideas of where we can take the game from here. One of the biggest changes that we made a "proof of concept" for was a two player split-screen. This ultimately would work with
+                controllers on PC. This would eventually allow us to easily move towards putting the product on consoles.</p>
+            <p style="font-size: 1em">One other idea that we began working on was plane customization. The goal would be to give the player an incentive to continue playing. The parts would offer slightly advantages/disadvantages through the characteristics of the plan (turning,
+                speed, fire-rate, etc) while bringing in a new layer of aesthetic choice for the player.</p>
+            <a href="https://github.com/CameronRCook/MiniVation" style="">Code (GitHub)</a>
+        </div>
+
+        <footer class="shadow " style="height: auto; margin-top: 40px; padding: 15px 15px 0px 15px">
+            <div>
+                <a style="float: right" href="#minivation">Back to Top</a>
+                <p style="text-align: center">Cameron Cook © 2019</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
+<script src="js/slideshow.js"></script>
 
 </html>

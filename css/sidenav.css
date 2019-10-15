@@ -37,6 +37,7 @@
 
 .sidenav a:hover {
     background-color: #ddd;
+    box-shadow: 2px 2px 2px grey;
 }
 
 
@@ -47,7 +48,6 @@
     background-color: #ccc;
     text-decoration: underline;
     text-decoration-color: #f1bf98;
-    box-shadow: 5px 5px 10px grey;
 }
 
 
