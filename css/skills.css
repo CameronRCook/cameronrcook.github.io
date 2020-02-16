@@ -37,7 +37,7 @@
 /*  Left    */
 
 .csharp {
-    width: 85%;
+    width: 75%;
     background-color: #89cdd6;
 }
 
@@ -65,12 +65,12 @@
 }
 
 .java {
-    width: 70%;
+    width: 65%;
     background-color: #79b791;
 }
 
 .python {
-    width: 70%;
+    width: 60%;
     background-color: #f1bf98;
 }
 
